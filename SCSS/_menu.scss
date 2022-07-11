@@ -1,0 +1,58 @@
+.header {
+    background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+
+    &__logo {
+        padding: 40px 0; 
+        font-family: 'Baloo 2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 48px;
+        color: $primary-color;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu{
+        display: flex;
+        flex: 1;
+        text-align: right;
+        justify-content:flex-end;
+        margin: auto 0;
+        color: $primary-color;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    &__item {
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 5px;
+    }
+
+    &__item:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+        @include transition-ease;
+    }
+
+}
+
+#icon {
+    width: 25px;
+    height: 25px;
+    margin: 45px 20px 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,271 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, textarea, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FC6A57;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  background: linear-gradient(180deg, #FFF1F2 0%, #FFFFFF 75.83%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+}
+.header__logo {
+  padding: 40px 0;
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 48px;
+  color: #FC6A57;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  flex: 1;
+  text-align: right;
+  justify-content: flex-end;
+  margin: auto 0;
+  color: #FC6A57;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.header__item {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+.header__item:hover {
+  background-color: #FC6A57;
+  color: #FFF5F5;
+  transition: all 0.4s ease-in-out;
+}
+
+#icon {
+  width: 25px;
+  height: 25px;
+  margin: 45px 20px 30px;
+  cursor: pointer;
+}
+
+.about {
+  margin: 135px auto 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__avatar {
+  position: relative;
+}
+.about__left {
+  position: relative;
+}
+.about__img {
+  position: absolute;
+  left: 100px;
+  top: 83px;
+  width: 460px;
+  height: 460px;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: url("../img/avatar.png");
+}
+.about__social {
+  position: absolute;
+  bottom: 10px;
+}
+.about__right {
+  margin-left: 100px;
+}
+.about__header {
+  margin-top: 100px;
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 96px;
+  color: #FC6A57;
+}
+.about__timer {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  margin-top: 12px;
+}
+.about__big-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 318px;
+  height: 318px;
+  border-radius: 50%;
+  margin-right: 60px;
+  background: #FFF5F5;
+  mix-blend-mode: multiply;
+}
+.about__bc-text {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 48px;
+}
+.about__small-circle {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #FFF5F5;
+  mix-blend-mode: multiply;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .about__img {
+    width: 260px;
+    height: 260px;
+    left: 80px;
+    top: 80px;
+  }
+
+  .about_bb {
+    width: 340px;
+    height: 423px;
+  }
+
+  .about__right {
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .header__menu {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about__left {
+    margin: 0 auto;
+  }
+  .about__img {
+    width: 460px;
+    height: 460px;
+    left: 85px;
+    top: 80px;
+  }
+  .about_bb {
+    width: 540px;
+    height: 623px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .about__left {
+    display: none;
+  }
+  .about__header {
+    margin-top: 30px;
+  }
+  .about__social {
+    display: flex;
+    position: inherit;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    text-align: right;
+  }
+
+  #icon {
+    margin: 52px 20px 30px;
+  }
+
+  .mobile-icon {
+    display: flex;
+  }
+}
