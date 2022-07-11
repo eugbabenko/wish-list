@@ -16,7 +16,9 @@
         color: $primary-color;
     }
 
+
     &__nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
     }
@@ -36,16 +38,22 @@
         text-align: center;
     }
 
+
     &__item {
         padding: 10px 20px;
         border-radius: 20px;
         margin-left: 5px;
+        
     }
 
     &__item:hover {
         background-color: $primary-color;
         color: $secondary-color;
         @include transition-ease;
+    }
+
+    &__icon-hide {
+        display: none;
     }
 
 }
