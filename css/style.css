@@ -69,7 +69,7 @@ body {
 
 .container {
   max-width: 1290px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -216,8 +216,8 @@ body {
 
 .wishlist__gread-container {
   display: grid;
-  grid-template-columns: 386px 386px 386px;
-  grid-template-rows: 386px 386px;
+  grid-template-columns: repeat(auto-fit, 376px);
+  justify-content: center;
   gap: 60px;
   padding-bottom: 40px;
 }
@@ -474,5 +474,64 @@ body {
   }
   .mobile-icon {
     display: flex;
+  }
+
+  .wishlist__gread-container {
+    grid-template-columns: repeat(auto-fit, 335px);
+    padding-bottom: 0;
+    gap: 0;
+  }
+
+  .wishlist__text {
+    position: static;
+    padding: 20px 0 40px;
+    display: block;
+    height: 10%;
+  }
+  
+  .image-overlay {
+    position: static;
+    background: #FFF5F5;
+    color: #FC6A57;
+    opacity: 1;
+    height: 40%;
+  }
+
+  .image-overlay > * {
+    transform: translateY(0);
+  }
+  
+  .wishlist__image-title {
+    display: none;
+  }
+
+  .wishlist__icon {
+    display: none;
+  }
+
+  .wishlist__link {
+    display: block;
+  }
+
+  .footer {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 340px) {
+  .wishlist__gread-container {
+    grid-template-columns: repeat(auto-fit, 300px);
+    padding-bottom: 0;
+    gap: 0;
+  }
+
+  .wishlist__link {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
   }
 }
