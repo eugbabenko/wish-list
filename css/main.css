@@ -129,7 +129,7 @@ html {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transition: all 1s ease;
-}
+} 
 
 .header__icon-hide {
     display: none;
@@ -163,6 +163,11 @@ html {
 
 .dark-theme .footer__social-items [d^=M0] {
     fill: var(--secondary-color);;
+ }
+
+.dark-theme .about__big-circle,
+.dark-theme .about__small-circle {
+    mix-blend-mode: difference;
  }
 
 .about__avatar {
@@ -526,7 +531,7 @@ html {
 
 .footer {
     background-color:var(--secondary-color);
-    height: 200px;
+    height: 210px;
 }
 
 .footer__logo {
@@ -686,7 +691,7 @@ html {
     }
     .header__menu {
         justify-content: space-between;
-        background: #FFF1F2;
+        background: var(--secondary-color);
         position: fixed;
         bottom: 0;
         left: 0;
