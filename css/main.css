@@ -167,7 +167,7 @@ html {
 
 .dark-theme .about__big-circle,
 .dark-theme .about__small-circle {
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
  }
 
 .about__avatar {
